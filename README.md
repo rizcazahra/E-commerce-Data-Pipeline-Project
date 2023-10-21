@@ -24,21 +24,25 @@ Before running the data pipeline, ensure you have the following prerequisites:
 ```bash
 git clone <repository_url>
 cd <repository_directory>
-2. Build the Docker Image
-bash
+
+### 2. Build the Docker Image
+```bash
 Copy code
 docker build -t bigmart-data-pipeline .
-3. Run the Docker Container
-bash
+
+### 3. Run the Docker Container
+```bash
 Copy code
 docker run -d -p 8080:8080 --name bigmart-pipeline bigmart-data-pipeline
-4. Access the Airflow Web Interface
+
+### 4. Access the Airflow Web Interface
 Visit http://localhost:8080 in your web browser to access the Apache Airflow web interface.
 
 5. Configure Connections
 In the Airflow web interface, navigate to the "Admin" section and select "Connections." Configure the following connections:
 
 gcp: Configure a Google Cloud Platform connection with the necessary credentials.
+
 6. Run the DAG
 In the Airflow web interface, navigate to the "DAGs" section and find the "bigmart" DAG. Trigger the DAG to start the data pipeline.
 
