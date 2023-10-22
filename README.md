@@ -2,7 +2,13 @@
 
 <img width="777" alt="Finpro Data Pipeline" src="https://github.com/rizcazahra/Bigmart-Data-Pipeline-Project/assets/84758353/4981e3ce-5dba-4d2d-a9c8-e4a9d3e33cbd">
 
-This project is designed to create a data pipeline for processing and analyzing sales data from Bigmart, sourced from [Kaggle](https://www.kaggle.com/datasets/brijbhushannanda1979/bigmart-sales-data). The pipeline uses Apache Airflow for orchestration, Google Cloud Storage for data storage, and Google BigQuery for data warehousing. Docker is employed for containerization and managing application dependencies, while Metabase serves as the reporting and data visualization tool.
+This project is designed to create a data pipeline for processing and analyzing sales data from Bigmart, sourced from [Kaggle](https://www.kaggle.com/datasets/brijbhushannanda1979/bigmart-sales-data). The pipeline uses:
+1. Astro CLI: Used for managing and orchestrating data workflows.
+2. Apache Airflow: Orchestrates the data pipeline tasks.
+3. Google Cloud Storage: Stores the raw and processed data.
+4. Google BigQuery: Acts as the data warehousing solution for querying and analyzing the data.
+5. Docker: Manages application dependencies and ensures consistent environments.
+6. Metabase: Provides a user-friendly interface for reporting and data visualization.
 
 ## Project Overview
 
