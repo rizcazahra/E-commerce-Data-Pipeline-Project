@@ -1,6 +1,5 @@
 # Bigmart-Data-Pipeline-Project
-
-<img width="777" alt="Finpro Data Pipeline" src="https://github.com/rizcazahra/Bigmart-Data-Pipeline-Project/assets/84758353/4981e3ce-5dba-4d2d-a9c8-e4a9d3e33cbd">
+<img width="781" alt="Bigmart" src="https://github.com/rizcazahra/Bigmart-Data-Pipeline-Project/assets/84758353/a144b5e4-5a51-44c1-8082-c1635e7b7d8e">
 
 This project is designed to create a data pipeline for processing and analyzing sales data from Bigmart, sourced from [Kaggle](https://www.kaggle.com/datasets/brijbhushannanda1979/bigmart-sales-data). The pipeline uses:
 1. Astro CLI: Used for managing and orchestrating data workflows.
