@@ -20,7 +20,7 @@ The pipeline uses:
 ## Project Overview
 
 - **DAG**: The project includes an Apache Airflow Directed Acyclic Graph (DAG) named "retail" that defines the workflow of the data pipeline.
-- **Data Source**: The data have 6 sources: Discount_Coupon.csv, Marketing_Spend.csv, Tax_amount.xlsx, CustomersData.xlsx and Online_Sales.csv, located in the `include/dataset/` directory.
+- **Data Source**: The data have 6 sources: discount_coupon.csv, marketing_spend.csv, Tax_amount.xlsx, customer_data.csv and Online_Sales.csv, located in the `include/dataset/` directory.
 - **Data Destination**: Processed data is stored in Google BigQuery under the `online` dataset.
 - **Connections**: The project relies on a Google Cloud Storage (GCS) connection (connection ID: `gcp`) for uploading and accessing data, as well as a Google BigQuery connection (connection ID: `gcp`) for interacting with BigQuery.
 
@@ -34,3 +34,17 @@ Before running the data pipeline, ensure you have the following prerequisites:
    
 ## Getting Started
 
+- Open the Terminal on VSCode and write <code>astro dev init</code> to initialize airflow development environment
+- Open the Dockerfile and write <code>quay.io/astronomer/astro-runtime:8.8.0</code> Astro CLI is a wrapper around docker, so we use that Docker image.
+- Download the dataset https://www.kaggle.com/datasets/rishikumarrajvansh/marketing-insights-for-e-commerce-company?select=Online_Sales.csv store in:
+   * include/dataset/online_sales.csv
+   * include/dataset/marketing_spend.csv
+   * include/dataset/discount_coupon.csv
+   * include/dataset/customer_data.csv
+   * include/dataset/tax_amount.csv
+- In requirements.txt, add apache-airflow-providers-google==10.3.0 restart Airflow
+- Create a GCS bucket with a unique name
+- Create a service account 
+   * Grant admin access to GCS + BigQuery
+   * Click on the service account → Keys → Add Key → Copy the JSON content
+   * Create a new file `service_account.json` in `include/gcp/`
