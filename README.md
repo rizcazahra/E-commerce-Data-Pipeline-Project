@@ -1,7 +1,7 @@
 # Bigmart-Data-Pipeline-Project
 <img width="1305" alt="image" src="https://github.com/rizcazahra/E-commerce-Data-Pipeline-Project/assets/84758353/f59cb405-a862-4459-bf39-97e6fff8e953">
 
-In this project, we will undertake an end-to-end data engineering endeavor. We will utilize a financial dataset from [Kaggle][(https://www.kaggle.com/datasets/rishikumarrajvansh/marketing-insights-for-e-commerce-company?select=Online_Sales.csv)] to unearth meaningful insights by examining the data's trends and patterns. The project scope encompasses the following tasks:
+In this project, we will undertake an end-to-end data engineering endeavor. We will utilize a financial dataset from Kaggle to unearth meaningful insights by examining the data's trends and patterns. The project scope encompasses the following tasks:
 1. Uploading the CSV files from Kaggle to Google Cloud Storage.
 2. Creating a dataset in BigQuery.
 3. Moving data from Google Cloud Storage to raw format.
@@ -48,3 +48,39 @@ Before running the data pipeline, ensure you have the following prerequisites:
    * Grant admin access to GCS + BigQuery
    * Click on the service account → Keys → Add Key → Copy the JSON content
    * Create a new file `service_account.json` in `include/gcp/`
+- Airflow → Admin → Connections
+  * id: gcp
+  * type: Google Cloud
+   * Keypath Path: `/usr/local/airflow/include/gcp/service_account.json`
+- Create the DAG (retail.py)
+- Test the task
+  * <code>astro dev bash</code>
+  * <code>airflow tasks test retail upload_csv_to_gcs 2023-01-01</code>
+- Create an empty dataset on Bigquery using <code>from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateEmptyDatasetOperator</code>
+- Create the task to load the file into a BigQuery
+- **Data Loaded into the Warehouse**
+
+**Transform**
+- Install Cosmos - DBT
+   * In requirements.txt
+     <code>
+     // REMOVE apache-airflow-providers-google==10.3.0
+     // REMOVE soda-core-bigquery==3.0.45
+     astronomer-cosmos[dbt-bigquery]==1.0.3 // install google + cosmos + dbt
+     protobuf==3.20.0</code>
+  * In env <code>PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python</code>
+  * In Dockerfile install dbt into a virtual environment
+  * Restart <code>astro dev restart</code>
+
+- Create <code>include/dbt</code> then make packages.yml, dbt_project.yml, profiles.yml inside it
+- Create sources.yml in <code>models/sources</code>
+- In models/transform create dim_customer.sql, dim_datetime.sql, dim_product.sql, fact_invoices.sql
+- Run the models <code>
+astro dev bash
+source /usr/local/airflow/dbt_venv/bin/activate
+cd include/dbt
+dbt deps
+dbt run --profiles-dir /usr/local/airflow/include/dbt/</code>
+
+**Visualization**
+- Create a docker-compose.override.yml
