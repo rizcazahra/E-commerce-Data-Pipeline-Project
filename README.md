@@ -84,3 +84,6 @@ dbt run --profiles-dir /usr/local/airflow/include/dbt/</code>
 
 **Visualization**
 - Create a docker-compose.override.yml
+
+<img width="1434" alt="Screenshot 2023-11-03 at 15 50 53" src="https://github.com/rizcazahra/E-commerce-Data-Pipeline-Project/assets/84758353/511c3d24-bf91-4835-a84c-3de72569a62d"> 
+
