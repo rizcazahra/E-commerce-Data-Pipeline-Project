@@ -56,6 +56,14 @@ def retail():
         mime_type='text/csv',
     )
 
+    upload_csv_to_gcs_five = LocalFilesystemToGCSOperator(
+        task_id='upload_csv_to_gcs_five',
+        src='include/dataset/task_amount.csv',
+        dst='raw/customer_data.csv',
+        bucket='rizcaz_bigmart_sales',
+        gcp_conn_id='gcp',
+        mime_type='text/csv',
+    )
     create_online_dataset = BigQueryCreateEmptyDatasetOperator(
         task_id='create_online_dataset',
         dataset_id='online',
@@ -114,6 +122,22 @@ def retail():
         task_id='gcs_to_raw_four',
         input_file=File(
             'gs://rizcaz_bigmart_sales/raw/customer_data.csv',
+            conn_id='gcp',
+            filetype=FileType.CSV,
+        ),
+        
+        output_table=Table(
+            name='marketing_spend',
+            conn_id='gcp',
+            metadata=Metadata(schema='online')
+        ),
+        use_native_support=False,
+    )
+
+    gcs_to_raw_five = aql.load_file(
+        task_id='gcs_to_raw_five',
+        input_file=File(
+            'gs://rizcaz_bigmart_sales/raw/tax_amount.csv',
             conn_id='gcp',
             filetype=FileType.CSV,
         ),
