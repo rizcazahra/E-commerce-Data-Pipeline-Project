@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: online
+    database: final-project-402008 # Put the project id!
+
+    tables:
+      - name: raw_invoices
+      - name: country
+      - name: discount_coupon
+      - name: marketing_spend

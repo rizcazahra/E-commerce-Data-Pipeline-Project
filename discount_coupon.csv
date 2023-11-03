@@ -1,0 +1,205 @@
+Month,Product_Category,Coupon_Code,Discount_pct
+Jan,Apparel,SALE10,10
+Feb,Apparel,SALE20,20
+Mar,Apparel,SALE30,30
+Jan,Nest-USA,ELEC10,10
+Feb,Nest-USA,ELEC20,20
+Mar,Nest-USA,ELEC30,30
+Jan,Office,OFF10,10
+Feb,Office,OFF20,20
+Mar,Office,OFF30,30
+Jan,Drinkware,EXTRA10,10
+Feb,Drinkware,EXTRA20,20
+Mar,Drinkware,EXTRA30,30
+Jan,Lifestyle,EXTRA10,10
+Feb,Lifestyle,EXTRA20,20
+Mar,Lifestyle,EXTRA30,30
+Jan,Bags,AIO10,10
+Feb,Bags,AIO20,20
+Mar,Bags,AIO30,30
+Jan,Notebooks,NOTES10,10
+Feb,Notebooks,NOTES20,20
+Mar,Notebooks,NOTES30,30
+Jan,Headgear,HGEAR10,10
+Feb,Headgear,HGEAR20,20
+Mar,Headgear,HGEAR30,30
+Jan,Nest,NE10,10
+Feb,Nest,NE20,20
+Mar,Nest,NE30,30
+Jan,Waze,WEMP10,10
+Feb,Waze,WEMP20,20
+Mar,Waze,WEMP30,30
+Jan,Bottles,BT10,10
+Feb,Bottles,BT20,20
+Mar,Bottles,BT30,30
+Jan,Nest-Canada,NCA10,10
+Feb,Nest-Canada,NCA20,20
+Mar,Nest-Canada,NCA30,30
+Jan,Housewares,HOU10,10
+Feb,Housewares,HOU20,20
+Mar,Housewares,HOU30,30
+Jan,Accessories,ACC10,10
+Feb,Accessories,ACC20,20
+Mar,Accessories,ACC30,30
+Jan,Gift Cards,GC10,10
+Feb,Gift Cards,GC20,20
+Mar,Gift Cards,GC30,30
+Jan,Notebooks & Journals,NJ10,10
+Feb,Notebooks & Journals,NJ20,20
+Mar,Notebooks & Journals,NJ30,30
+Jan,Android,AND10,10
+Feb,Android,AND20,20
+Mar,Android,AND30,30
+Apr,Apparel,SALE10,10
+May,Apparel,SALE20,20
+Jun,Apparel,SALE30,30
+Apr,Nest-USA,ELEC10,10
+May,Nest-USA,ELEC20,20
+Jun,Nest-USA,ELEC30,30
+Apr,Office,OFF10,10
+May,Office,OFF20,20
+Jun,Office,OFF30,30
+Apr,Drinkware,EXTRA10,10
+May,Drinkware,EXTRA20,20
+Jun,Drinkware,EXTRA30,30
+Apr,Lifestyle,EXTRA10,10
+May,Lifestyle,EXTRA20,20
+Jun,Lifestyle,EXTRA30,30
+Apr,Bags,AIO10,10
+May,Bags,AIO20,20
+Jun,Bags,AIO30,30
+Apr,Notebooks,NOTES10,10
+May,Notebooks,NOTES20,20
+Jun,Notebooks,NOTES30,30
+Apr,Headgear,HGEAR10,10
+May,Headgear,HGEAR20,20
+Jun,Headgear,HGEAR30,30
+Apr,Nest,NE10,10
+May,Nest,NE20,20
+Jun,Nest,NE30,30
+Apr,Waze,WEMP10,10
+May,Waze,WEMP20,20
+Jun,Waze,WEMP30,30
+Apr,Bottles,BT10,10
+May,Bottles,BT20,20
+Jun,Bottles,BT30,30
+Apr,Nest-Canada,NCA10,10
+May,Nest-Canada,NCA20,20
+Jun,Nest-Canada,NCA30,30
+Apr,Housewares,HOU10,10
+May,Housewares,HOU20,20
+Jun,Housewares,HOU30,30
+Apr,Accessories,ACC10,10
+May,Accessories,ACC20,20
+Jun,Accessories,ACC30,30
+Apr,Gift Cards,GC10,10
+May,Gift Cards,GC20,20
+Jun,Gift Cards,GC30,30
+Apr,Notebooks & Journals,NJ10,10
+May,Notebooks & Journals,NJ20,20
+Jun,Notebooks & Journals,NJ30,30
+Apr,Android,AND10,10
+May,Android,AND20,20
+Jun,Android,AND30,30
+Jul,Apparel,SALE10,10
+Aug,Apparel,SALE20,20
+Sep,Apparel,SALE30,30
+Jul,Nest-USA,ELEC10,10
+Aug,Nest-USA,ELEC20,20
+Sep,Nest-USA,ELEC30,30
+Jul,Office,OFF10,10
+Aug,Office,OFF20,20
+Sep,Office,OFF30,30
+Jul,Drinkware,EXTRA10,10
+Aug,Drinkware,EXTRA20,20
+Sep,Drinkware,EXTRA30,30
+Jul,Lifestyle,EXTRA10,10
+Aug,Lifestyle,EXTRA20,20
+Sep,Lifestyle,EXTRA30,30
+Jul,Bags,AIO10,10
+Aug,Bags,AIO20,20
+Sep,Bags,AIO30,30
+Jul,Notebooks,NOTES10,10
+Aug,Notebooks,NOTES20,20
+Sep,Notebooks,NOTES30,30
+Jul,Headgear,HGEAR10,10
+Aug,Headgear,HGEAR20,20
+Sep,Headgear,HGEAR30,30
+Jul,Nest,NE10,10
+Aug,Nest,NE20,20
+Sep,Nest,NE30,30
+Jul,Waze,WEMP10,10
+Aug,Waze,WEMP20,20
+Sep,Waze,WEMP30,30
+Jul,Bottles,BT10,10
+Aug,Bottles,BT20,20
+Sep,Bottles,BT30,30
+Jul,Nest-Canada,NCA10,10
+Aug,Nest-Canada,NCA20,20
+Sep,Nest-Canada,NCA30,30
+Jul,Housewares,HOU10,10
+Aug,Housewares,HOU20,20
+Sep,Housewares,HOU30,30
+Jul,Accessories,ACC10,10
+Aug,Accessories,ACC20,20
+Sep,Accessories,ACC30,30
+Jul,Gift Cards,GC10,10
+Aug,Gift Cards,GC20,20
+Sep,Gift Cards,GC30,30
+Jul,Notebooks & Journals,NJ10,10
+Aug,Notebooks & Journals,NJ20,20
+Sep,Notebooks & Journals,NJ30,30
+Jul,Android,AND10,10
+Aug,Android,AND20,20
+Sep,Android,AND30,30
+Oct,Apparel,SALE10,10
+Nov,Apparel,SALE20,20
+Dec,Apparel,SALE30,30
+Oct,Nest-USA,ELEC10,10
+Nov,Nest-USA,ELEC20,20
+Dec,Nest-USA,ELEC30,30
+Oct,Office,OFF10,10
+Nov,Office,OFF20,20
+Dec,Office,OFF30,30
+Oct,Drinkware,EXTRA10,10
+Nov,Drinkware,EXTRA20,20
+Dec,Drinkware,EXTRA30,30
+Oct,Lifestyle,EXTRA10,10
+Nov,Lifestyle,EXTRA20,20
+Dec,Lifestyle,EXTRA30,30
+Oct,Bags,AIO10,10
+Nov,Bags,AIO20,20
+Dec,Bags,AIO30,30
+Oct,Notebooks,NOTES10,10
+Nov,Notebooks,NOTES20,20
+Dec,Notebooks,NOTES30,30
+Oct,Headgear,HGEAR10,10
+Nov,Headgear,HGEAR20,20
+Dec,Headgear,HGEAR30,30
+Oct,Nest,NE10,10
+Nov,Nest,NE20,20
+Dec,Nest,NE30,30
+Oct,Waze,WEMP10,10
+Nov,Waze,WEMP20,20
+Dec,Waze,WEMP30,30
+Oct,Bottles,BT10,10
+Nov,Bottles,BT20,20
+Dec,Bottles,BT30,30
+Oct,Nest-Canada,NCA10,10
+Nov,Nest-Canada,NCA20,20
+Dec,Nest-Canada,NCA30,30
+Oct,Housewares,HOU10,10
+Nov,Housewares,HOU20,20
+Dec,Housewares,HOU30,30
+Oct,Accessories,ACC10,10
+Nov,Accessories,ACC20,20
+Dec,Accessories,ACC30,30
+Oct,Gift Cards,GC10,10
+Nov,Gift Cards,GC20,20
+Dec,Gift Cards,GC30,30
+Oct,Notebooks & Journals,NJ10,10
+Nov,Notebooks & Journals,NJ20,20
+Dec,Notebooks & Journals,NJ30,30
+Oct,Android,AND10,10
+Nov,Android,AND20,20
+Dec,Android,AND30,30

@@ -1,0 +1,7 @@
+name: 'bigmart'
+
+profile: 'bigmart'
+
+models:
+  retail:
+    materialized: table
