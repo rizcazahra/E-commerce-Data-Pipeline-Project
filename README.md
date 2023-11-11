@@ -1,4 +1,4 @@
-# Bigmart-Data-Pipeline-Project
+# Ecommerce-Data-Pipeline-Project
 <img width="1305" alt="image" src="https://github.com/rizcazahra/E-commerce-Data-Pipeline-Project/assets/84758353/f59cb405-a862-4459-bf39-97e6fff8e953">
 
 In this project, we will undertake an end-to-end data engineering endeavor. We will utilize a financial dataset from Kaggle to unearth meaningful insights by examining the data's trends and patterns. The project scope encompasses the following tasks:
